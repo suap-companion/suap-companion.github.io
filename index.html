@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>suap-companion · chamados do SUAP no seu ritmo</title>
+  <meta name="description" content="Clientes não oficiais para a Central de Serviços do SUAP: um app Android para organizar a vida e um CLI para automatizar com IA.">
+  <meta name="theme-color" content="#11786C">
+  <link rel="icon" href="assets/img/icone.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/rawline-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="top">
+    <div class="wrap top-in">
+      <a class="brand" href="./" aria-label="suap-companion, página inicial">
+        <img src="assets/img/icone.svg" alt="" width="36" height="36">
+        <span>suap-companion</span>
+      </a>
+      <nav aria-label="Principal">
+        <a href="#dois-jeitos">Dois jeitos de usar</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#baixar" class="btn small">Baixar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="wrap hero-in">
+        <div class="hero-text">
+          <p class="eyebrow">chamados · Central de Serviços do SUAP</p>
+          <h1>Seus chamados do SUAP, <span>no seu ritmo.</span></h1>
+          <p class="lead">Um app Android para <strong>organizar a vida</strong> e um CLI para quem gosta de <strong>automação com IA</strong>. Os dois falam com o SUAP do jeito que você já usa, com a sua conta, e guardam o que é seu só com você.</p>
+          <p class="cta">
+            <a class="btn" href="#baixar">Baixar o chamados</a>
+            <a class="btn ghost" href="https://suap-companion.github.io/chamados/">Ver o guia de uso</a>
+          </p>
+          <p class="note">Gratuito e de código aberto. <a href="#oficial">Não é um projeto oficial</a> do IFRN nem do SUAP.</p>
+        </div>
+        <div class="hero-shots" aria-hidden="false">
+          <figure class="phone p1"><img src="assets/img/app-lista.webp" alt="Lista de chamados no app, com abas Meus, Suporte e A fechar e filtros Ativos, Adiados e Arquivados" width="270" height="600"></figure>
+          <figure class="phone p2"><img src="assets/img/app-lote.webp" alt="Seleção em lote: vários chamados escolhidos e ações para arquivar, adiar, comentar e mais" width="270" height="600"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="dois-jeitos" class="wrap">
+      <h2>Dois jeitos de usar, um mesmo chamados</h2>
+      <p class="sub">Escolha o que combina com você. Os dois sincronizam seus títulos e marcas, cifrados, quando você quiser.</p>
+
+      <div class="duo">
+        <article class="card android">
+          <p class="tag">Android</p>
+          <h3>Para quem deseja organizar a vida</h3>
+          <p>Seus chamados ficam em ordem no bolso: o que importa agora no topo, o resto guardado e voltando sozinho na hora certa.</p>
+          <ul class="ticks">
+            <li><strong>Adie</strong> um chamado e ele volta ao topo, marcado, no dia e hora que você escolher.</li>
+            <li><strong>Arquive</strong> o que já passou, sem apagar nada no SUAP.</li>
+            <li><strong>Selecione vários</strong> e arquive, adie, comente ou ponha tags de uma vez.</li>
+            <li><strong>Dê um título seu</strong> a cada chamado: o SUAP não tem, o app sim.</li>
+            <li><strong>Receba avisos</strong> quando algo muda, e compartilhe do celular direto para um chamado.</li>
+          </ul>
+          <div class="shots">
+            <figure class="phone"><img src="assets/img/app-lista.webp" alt="Lista de chamados com selos de quantidade" width="180" height="400" loading="lazy"></figure>
+            <figure class="phone"><img src="assets/img/app-mais.webp" alt="Detalhe do chamado com o menu para arquivar, adiar ou exportar" width="180" height="400" loading="lazy"></figure>
+            <figure class="phone"><img src="assets/img/app-adiar.webp" alt="Escolha de quando o chamado volta: mais tarde, amanhã, fim de semana, próxima semana ou data e hora" width="180" height="400" loading="lazy"></figure>
+          </div>
+          <p class="cta"><a class="btn" href="#baixar">Baixar para Android</a></p>
+        </article>
+
+        <article class="card cli">
+          <p class="tag">CLI</p>
+          <h3>Para quem gosta de automação com IA</h3>
+          <p>Todo o chamados no terminal, pensado para ser chamado por scripts e por agentes de IA: saídas claras, comandos curtos e dados em formatos que a IA lê bem.</p>
+          <ul class="ticks">
+            <li><strong>Exporte um chamado</strong> em ZIP com <code>chamado.md</code> legível, <code>chamado.json</code> estruturado e os anexos, prontos para a IA analisar.</li>
+            <li><strong>Acompanhe</strong> mudanças com <code>watch</code> e dispare o que quiser quando algo acontecer.</li>
+            <li><strong>Comente, anexe, resolva</strong> em um ou vários chamados por comando, sem abrir o navegador.</li>
+            <li><strong>Mesmos recursos</strong> do app: títulos, arquivo, adiamentos e sincronização cifrada.</li>
+          </ul>
+<pre class="term" aria-label="Exemplo de uso no terminal"><span class="c"># meus chamados abertos</span>
+$ chamados list --meus
+<span class="c"># tudo de um chamado, pronto para a IA</span>
+$ chamados export 12345
+<span class="c"># avisa quando algo mudar</span>
+$ chamados watch</pre>
+          <p class="cta"><a class="btn" href="#baixar">Baixar o CLI</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="recursos" class="band">
+      <div class="wrap">
+        <h2>O que você ganha</h2>
+        <div class="grid">
+          <article><h3>Tudo do SUAP, em um lugar</h3><p>Liste, abra, comente, anexe, resolva e acompanhe chamados, tanto os seus quanto os da fila de suporte.</p></article>
+          <article><h3>Organização de verdade</h3><p>Títulos só seus, arquivo, adiamento com volta marcada e seleção em lote. O que é seu não muda nada no SUAP.</p></article>
+          <article><h3>Notas internas e anexos</h3><p>Veja comentários, notas internas (para quem é da equipe) e anexos em abas, com quem escreveu e quando.</p></article>
+          <article><h3>Avisos que importam</h3><p>O app avisa quando um chamado muda ou quando um adiamento acaba, sem você precisar abrir o SUAP toda hora.</p></article>
+          <article><h3>Preparado para IA</h3><p>Exportação em Markdown e JSON, comandos previsíveis e saída limpa: ideal para scripts e agentes.</p></article>
+          <article><h3>Sincronia entre aparelhos</h3><p>Leve seus títulos e marcas do celular para o computador (e de volta), cifrados de ponta a ponta, por QR.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacidade" class="wrap narrow">
+      <h2>Seus dados ficam com você</h2>
+      <ul class="ticks">
+        <li>O app <strong>nunca guarda a sua senha</strong>: você entra pelo login do próprio SUAP.</li>
+        <li>Títulos, arquivos e adiamentos ficam <strong>no seu aparelho</strong>, nunca no SUAP.</li>
+        <li>A sincronização é <strong>cifrada de ponta a ponta</strong> e vai só para o espaço que você escolher.</li>
+        <li>Não há servidor nosso no meio: o app fala direto com o SUAP.</li>
+      </ul>
+    </section>
+
+    <section id="baixar" class="band download">
+      <div class="wrap">
+        <h2>Baixar o chamados</h2>
+        <p class="sub">Versão mais recente: <strong id="versao">carregando…</strong></p>
+        <div class="downloads">
+          <a class="dl" id="dl-android" href="https://github.com/suap-companion/chamados/releases/latest">
+            <span class="dl-t">Android</span><span class="dl-s">App (APK assinado)</span>
+          </a>
+          <a class="dl" id="dl-windows" href="https://github.com/suap-companion/chamados/releases/latest">
+            <span class="dl-t">Windows</span><span class="dl-s">CLI (x86_64)</span>
+          </a>
+          <a class="dl" id="dl-linux" href="https://github.com/suap-companion/chamados/releases/latest">
+            <span class="dl-t">Linux</span><span class="dl-s">CLI (x86_64)</span>
+          </a>
+          <a class="dl" id="dl-macos" href="https://github.com/suap-companion/chamados/releases/latest">
+            <span class="dl-t">macOS</span><span class="dl-s">CLI (Apple Silicon)</span>
+          </a>
+        </div>
+        <p class="note">Outras versões e o histórico estão nas <a href="https://github.com/suap-companion/chamados/releases">releases</a>. Precisa de ajuda para instalar? Veja o <a href="https://suap-companion.github.io/chamados/">guia de uso</a>.</p>
+      </div>
+    </section>
+
+    <section id="oficial" class="wrap narrow">
+      <h2>Projeto pessoal, não oficial</h2>
+      <p>O suap-companion <strong>não é um projeto oficial</strong> do IFRN nem do SUAP: é um projeto pessoal, feito sem qualquer apoio ou incentivo institucional. Ele usa a sua própria conta, do mesmo jeito que o navegador, e só faz o que você pede.</p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <p><strong>suap-companion</strong> · feito por <a href="https://github.com/kelsoncm">Kelson Medeiros</a></p>
+      <nav aria-label="Rodapé">
+        <a href="https://github.com/suap-companion/chamados">Código do chamados</a>
+        <a href="https://suap-companion.github.io/chamados/">Guia de uso</a>
+        <a href="https://github.com/suap-companion/chamados/issues">Relatar um problema</a>
+        <a href="assets/fonts/Rawline-OFL.txt">Licença da fonte Rawline</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
